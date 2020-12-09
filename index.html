@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Derrick</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <div id="menu" class="nav">
+        <a href="#" class="close" onclick="closeSlideMenu()">
+          <i class="fas fa-times"></i>
+        </a>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">Bio</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <header id="header">
+      <nav>
+        <h3 id="logo">I'm A Full-Stack Web Developer</h3>
+        <img
+          id="burger"
+          onclick="openMenu()"
+          src="./images/bar.png"
+          alt="menu bars"
+        />
+      </nav>
+      <section class="intro">
+        <div class="hero">
+          <h1 class="headline">
+            <span id="hello">Hello</span> <br />
+            I'm Derrick <span>.</span>
+          </h1>
+        </div>
+      </section>
+    </header>
+    <div class="slider"></div>
+    <section class="bio" id="about">
+      <div class="pic">
+        <img src="./images/img2.png" alt="" />
+      </div>
+      <div class="bio-content">
+        <h1 data-aos="fade-up">My Bio <span></span></h1>
+        <p data-aos="fade-up">
+          Hi, I'm Derrick, a fullstack web developer! <span></span>
+        </p>
+        <p data-aos="fade-up">
+          I was born in Kisumu, Kenya, and my passion for tech started when I
+          was quite young, trying to figure how some electronics worked.
+        </p>
+        <p data-aos="fade-up">
+          Creating a project from scratch and seeing it develop to something
+          awesome is one of the most satisfactory feeling. Get intouch, I'm
+          looking forward to working with you.
+        </p>
+      </div>
+    </section>
+    <section class="skills" id="skill">
+      <h1 data-aos="fade-up">What I'm Good At?</h1>
+      <div class="skill">
+        <li data-aos="fade-up">
+          <h3><span>87%</span> HTML5</h3>
+          <span class="bar"><span class="html"></span></span>
+        </li>
+        <li data-aos="fade-up">
+          <h3><span>90%</span> CSS3</h3>
+          <span class="bar"><span class="css"></span></span>
+        </li>
+        <li data-aos="fade-up">
+          <h3><span>70%</span> Javascript</h3>
+          <span class="bar"><span class="javascript"></span></span>
+        </li>
+        <li data-aos="fade-up">
+          <h3><span>80%</span> Python</h3>
+          <span class="bar"><span class="python"></span></span>
+        </li>
+        <li data-aos="fade-up">
+          <h3><span>55%</span> Angular</h3>
+          <span class="bar"><span class="angular"></span></span>
+        </li>
+        <li data-aos="fade-up">
+          <h3><span>85%</span> Django</h3>
+          <span class="bar"><span class="django"></span></span>
+        </li>
+        <li data-aos="fade-up">
+          <h3><span>75%</span> Flask</h3>
+          <span class="bar"><span class="flask"></span></span>
+        </li>
+      </div>
+    </section>
+    <section class="projects" id="project">
+      <h1 data-aos="fade-up">What I've Done</h1>
+      <div class="container-grid" data-aos="fade-up">
+        <div class="project-container w-1">
+          <div class="project-item">
+            <div class="image">
+              <img src="/images/img1.png" alt="" />
+            </div>
+            <div class="overlay">Overlay</div>
+          </div>
+        </div>
+        <div class="project-container w-2">
+          <div class="project-item">
+            <div class="image">
+              <img src="/images/img2.png" alt="" />
+            </div>
+            <div class="overlay">Overlay</div>
+          </div>
+        </div>
+        <div class="project-container w-3">
+          <div class="project-item">
+            <div class="image">
+              <img src="/images/img3.png" alt="" />
+            </div>
+            <div class="overlay">Overlay</div>
+          </div>
+        </div>
+        <div class="project-container w-4">
+          <div class="project-item">
+            <div class="image">
+              <img src="/images/img4.png" alt="" />
+            </div>
+            <div class="overlay">Overlay</div>
+          </div>
+        </div>
+        <div class="project-container w-5">
+          <div class="project-item">
+            <div class="image">
+              <img src="/images/img5.png" alt="" />
+            </div>
+            <div class="overlay">Overlay</div>
+          </div>
+        </div>
+        <div class="project-container w-6">
+          <div class="project-item">
+            <div class="image">
+              <img src="/images/img6.png" alt="" />
+            </div>
+            <div class="overlay">Overlay</div>
+          </div>
+        </div>
+        <div class="project-container w-7">
+          <div class="project-item">
+            <div class="image">
+              <img src="/images/img7.png" alt="" />
+            </div>
+            <div class="overlay">Overlay</div>
+          </div>
+        </div>
+        <div class="project-container w-8">
+          <div class="project-item">
+            <div class="image">
+              <img src="/images/img8.png" alt="" />
+            </div>
+            <div class="overlay">Overlay</div>
+          </div>
+        </div>
+        <div class="project-container w-9">
+          <div class="project-item">
+            <div class="image">
+              <img src="/images/img9.png" alt="" />
+            </div>
+            <div class="overlay">Overlay</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contacts">
+      <p data-aos="fade-up"><small>Want to work with me?</small></p>
+      <h1 data-aos="fade-up">Get Intouch</h1>
+      <div class="contact-section" data-aos="fade-up">
+        <div class="card">
+          <i class="card-icon fas fa-envelope"></i>
+          <p>odhiamboderrick56@gmail.com</p>
+        </div>
+        <div class="card">
+          <i class="card-icon fas fa-phone"></i>
+          <p>+254 790 594 960</p>
+        </div>
+        <div class="card">
+          <i class="card-icon fas fa-map-marker-alt"></i>
+          <p>Nairobi, Kenya</p>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <span
+        ><a href=""><i class="fab fa-linkedin-in"></i></a
+      ></span>
+      <span
+        ><a href=""><i class="fab fa-github"></i></a
+      ></span>
+      <span
+        ><a href=""><i class="fab fa-instagram"></i></a
+      ></span>
+      <span
+        ><a href=""><i class="fab fa-twitter"></i></a
+      ></span>
+    </section>
+
+    <!-- Timeline -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <!-- GSAP animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <!-- Scroll Magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <!-- GSAP animation scroll pluggin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+      });
+    </script>
+    <!-- Javascript -->
+    <script src="/script.js"></script>
+  </body>
+</html>
