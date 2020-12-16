@@ -3,6 +3,7 @@ const slider = document.querySelector('.slider');
 const logo = document.querySelector('#logo');
 const headline = document.querySelector('.headline');
 const burger = document.querySelector('#burger');
+const nav = document.querySelector('#nav-bar');
 
 const tl = new TimelineMax();
 
@@ -22,6 +23,7 @@ tl.fromTo(hero, 1, { height: '0%' }, { height: '80%', ease: Power2.easeInOut })
   )
   .fromTo(logo, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, '-=0.5')
   .fromTo(burger, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, '-=0.5')
+  .fromTo(nav, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, '-=0.5')
   .fromTo(headline, 0.2, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, '-=0.2');
 
 function openMenu() {
@@ -32,3 +34,20 @@ function closeSlideMenu() {
   document.getElementById('menu').style.width = '0';
   document.getElementById('content').style.width = '0';
 }
+
+// JQuery
+$('.navigation-bar a').on('click', function (e) {
+  if (this.hash !== '') {
+    e.preventDefault();
+    console.log(this.hash);
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top,
+      },
+      800
+    );
+  }
+});
