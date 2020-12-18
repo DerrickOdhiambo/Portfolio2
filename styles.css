@@ -222,7 +222,10 @@ header,
   width: 75%;
   animation: flask 2s;
 }
-.col-md-4 a img {
+.col-md-4 {
+  position: relative;
+}
+.col-md-4 img {
   height: 200px;
   width: 300px;
   border-radius: 10px;
@@ -231,9 +234,23 @@ header,
   object-fit: cover;
   transition: 0.3s ease-in-out;
 }
-.col-md-4:hover a img {
+.col-md-4:hover img {
   transform: scale(1.05);
   transition: 0.3s ease-in-out;
+  opacity: 0.1;
+}
+.overlay {
+  position: absolute;
+  top: 26%;
+  left: 10%;
+  padding: 10px;
+  display: none;
+  color: rgb(15, 10, 1);
+}
+.col-md-4:hover .overlay {
+  display: block;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 @keyframes move-up {
