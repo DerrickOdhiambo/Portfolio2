@@ -217,12 +217,18 @@ header,
   width: 75%;
   animation: flask 2s;
 }
-.col-md-4 img {
+.col-md-4 a img {
   height: 200px;
   width: 300px;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 10px 10px 15px -8px rgba(0, 0, 0, 0.75);
   object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+.col-md-4:hover a img {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
 }
 
 @keyframes move-up {
