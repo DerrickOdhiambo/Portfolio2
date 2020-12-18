@@ -87,6 +87,9 @@ nav .navigation-bar a:hover {
   justify-content: center;
   align-items: center;
 }
+#name {
+  color: rgb(199, 131, 5);
+}
 .hero {
   height: 70%;
   width: 100%;
@@ -101,7 +104,7 @@ nav .navigation-bar a:hover {
   font-family: 'BioRhyme', serif;
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 15%;
   font-size: 50px;
   transform: translate(-25%, -70%);
   color: whitesmoke;
@@ -109,6 +112,9 @@ nav .navigation-bar a:hover {
 }
 #hello {
   font-size: 90px;
+}
+.headline button {
+  color: whitesmoke;
 }
 .hero::after {
   content: '';
@@ -134,13 +140,12 @@ header,
   justify-content: center;
   align-items: center;
 }
-.bio-content {
-  /* text-align: center; */
-  padding: 2rem;
+.bio .col-md-6 h3 {
+  color: rgb(199, 131, 5);
 }
 .col-md-6 h3 span {
   width: 30%;
-  background: #d3d6c3;
+  background: teal;
   height: 5px;
   display: block;
   /* margin: auto; */
@@ -175,7 +180,7 @@ header,
 .projects h3,
 .footer-content h3 {
   text-align: center;
-  color: orange;
+  color: rgb(199, 131, 5);
 }
 .skills li {
   margin: 20px 0;
@@ -323,7 +328,7 @@ header,
 }
 .card-icon {
   font-size: 28px;
-  background: orange;
+  background: rgb(199, 131, 5);
   width: 60px;
   height: 60px;
   text-align: center;
@@ -379,6 +384,9 @@ header,
   margin: 10px auto;
   line-height: 28px;
   font-size: 24px;
+}
+.footer-content a {
+  color: teal;
 }
 .socials {
   list-style: none;
@@ -450,7 +458,7 @@ header,
     text-align: center;
   }
   .bio h3 {
-    color: orange;
+    color: rgb(199, 131, 5);
   }
   .bio .col-md-6 {
     margin-top: 20px;
@@ -508,7 +516,7 @@ header,
     text-align: center;
   }
   .bio h3 {
-    color: orange;
+    color: rgb(199, 131, 5);
   }
   .bio .col-md-6 {
     margin-top: 20px;

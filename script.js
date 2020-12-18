@@ -51,3 +51,18 @@ $('.navigation-bar a').on('click', function (e) {
     );
   }
 });
+$('.footer-content a').on('click', function (e) {
+  if (this.hash !== '') {
+    e.preventDefault();
+    console.log(this.hash);
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top,
+      },
+      800
+    );
+  }
+});
