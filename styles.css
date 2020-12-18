@@ -510,6 +510,10 @@ header,
     line-height: 20px;
     font-size: 19px;
   }
+  .overlay {
+    left: 0%;
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 364px) {
