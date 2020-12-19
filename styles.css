@@ -512,13 +512,47 @@ header,
 }
 
 @media screen and (max-width: 800px) {
-  .contact-section {
-    flex-direction: column;
+  .headline {
+    top: 40%;
+    left: 15%;
+    font-size: 25px;
   }
-  .card {
+  #logo {
+    font-size: 30px;
+  }
+  .bio {
+    padding: 20px;
+  }
+  .bio .col-md-6 {
+    margin-top: 20px;
+  }
+  .col-md-6 h3 span {
+    margin: unset;
+    background: teal;
+  }
+  .col-md-6 p {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  .skills {
+    width: 90%;
+    height: 100%;
+  }
+  .projects {
     width: 100%;
-    max-width: 300px;
-    margin: 30px 0;
+    height: 100%;
+  }
+  .col-md-4 img {
+    height: 150px;
+    width: 200px;
+  }
+  .contact {
+    height: 100%;
+    width: 100%;
+  }
+  .contact-section {
+    width: 100%;
+    padding: 0 5px;
   }
 }
 
