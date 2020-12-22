@@ -621,7 +621,7 @@ header,
   .col-md-6 img {
     height: 300px;
     width: 250px;
-    object-fit: cover;
+    object-fit: none;
   }
 }
 
