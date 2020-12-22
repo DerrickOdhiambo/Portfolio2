@@ -24,37 +24,6 @@ nav {
   align-items: center;
   color: whitesmoke;
 }
-.nav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  transition: 0.7s;
-  z-index: 4;
-  padding-top: 60px;
-  background: black;
-  opacity: 0.7;
-}
-.nav ul li {
-  list-style-type: none;
-}
-.nav ul li a {
-  display: inline-block;
-  padding: 20px 30px;
-  font-size: 25px;
-  color: whitesmoke;
-  text-decoration: none;
-}
-.nav .close {
-  position: absolute;
-  top: 5%;
-  right: 20px;
-  margin-left: 50px;
-  font-size: 30px;
-  color: whitesmoke;
-}
 #logo {
   grid-column: 2/3;
   font-size: 24px;
@@ -118,7 +87,7 @@ nav .navigation-bar a:hover {
 }
 .hero::after {
   content: '';
-  background: teal;
+  background: linear-gradient(to right, teal, orange);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -155,6 +124,9 @@ header,
 .col-md-6 img {
   height: 350px;
   width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 10px 10px 15px -8px rgba(0, 0, 0, 0.75);
 }
 .projects {
   width: 90%;
@@ -673,5 +645,11 @@ header,
   }
   .contact p {
     padding-top: 10px;
+  }
+  .col-md-6 img {
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
   }
 }
