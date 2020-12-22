@@ -618,6 +618,11 @@ header,
     left: 0%;
     padding: 20px;
   }
+  .col-md-6 img {
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 364px) {
@@ -645,11 +650,5 @@ header,
   }
   .contact p {
     padding-top: 10px;
-  }
-  .col-md-6 img {
-    height: 300px;
-    width: 250px;
-    object-fit: cover;
-    border-radius: 50%;
   }
 }
