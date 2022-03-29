@@ -213,9 +213,10 @@ header,
 }
 .overlay {
   position: absolute;
+  width: 100%;
   top: 26%;
-  left: 10%;
-  padding: 10px;
+  left: 1%;
+  padding: 2rem;
   display: none;
   color: rgb(15, 10, 1);
 }
