@@ -6,13 +6,22 @@
     <title>Derrick</title>
 
     <!-- Favicon -->
-    <link rel='shortcut icon' type='image/x-icon' href='./images/favicon.ico'>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
     <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -27,8 +36,13 @@
   <body>
     <header id="header">
       <nav class="menu">
-        <h3 id="logo" class="pt-3">I'm <span id="name">Derrick</span>  <br> A Full-Stack Web <span id="name">Developer</span></h3>
-        <img id="burger" src="./images/bar.png" onclick="openMenu()" alt="menu">
+        <h3 id="logo" class="pt-3">Derrick.</h3>
+        <img
+          id="burger"
+          src="./images/bar.png"
+          onclick="openMenu()"
+          alt="menu"
+        />
         <div class="navigation-bar" id="nav-bar">
           <a href="#header">Home</a>
           <a href="#about">About</a> 
@@ -39,111 +53,200 @@
       </nav>
       <section class="intro">
         <div class="hero">
-          <h1 class="headline text-center">
-            <span id="hello">Hi</span> <br>
-            <a class="btn" style="background-color: rgb(199, 131, 5)" href="mailto:odhiamboderrick56@gmail.com" target="_blank">contact me</a>
+          <h1 class="headline">
+            <span>Hi, I'm</span> <br />
+            <p>
+              <span id="name">Derrick Odhiambo</span> <br />
+              <span id="multiText"></span>
+            </p>
           </h1>
         </div>
       </section>
     </header>
     <div class="slider"></div>
     <section class="bio container" id="about">
-      <div class="row">
-        <div class="col-md-6" data-aos="fade-up">
+      <div class="bio-row">
+        <div class="bio-col-1" data-aos="fade-up">
           <img src="./images/profile3.jpg" alt="Profile Picture" />
         </div>
-        <div class="col-md-6">
-          <h3 id="bio-name" data-aos="fade-up">My Bio <span></span></h3>
+        <div class="bio-col-2">
+          <h3 id="bio-name" data-aos="fade-up">About Me <span></span></h3>
           <p data-aos="fade-up">
-            Hi, I'm Derrick, a fullstack web developer! <span></span>
+            I'm a Frontend Web developer, passionate about UI/UX who curious to always learn and improve. I'm looking forward to working with you.<span></span>
           </p>
-          <p data-aos="fade-up">
-            I was born in Kisumu, Kenya, and my passion for tech started when I
-            was quite young, trying to figure how some electronics worked.
-          </p>
-          <p data-aos="fade-up">
-            Creating a project from scratch and seeing it develop to something
-            awesome is one of the most satisfactory feeling. Get intouch, I'm
-            looking forward to working with you.
-          </p>
+          <div  data-aos="fade-up" class="tabTitles">
+            <p class="tabLinks activeLink" onclick="openTab('experience')">
+              Experience
+            </p>
+            <p class="tabLinks" onclick="openTab('education')">Education</p>
+          </div>
+          <div  data-aos="fade-up" class="tabContents activeTab" id="experience">
+            <ul>
+              <li>
+                <span> Sep 2022 - Present</span> <br />
+                Frontend Software Developer at Sokosolar
+              </li>
+              <li>
+                <span> June 2022 - July 2022</span> <br />Intern Frontend
+                Software Developer at Thrivin
+              </li>
+              <li>
+                <span>Nov 2020 - Jan 2021</span> <br />
+                Freelance work
+              </li>
+            </ul>
+          </div>
+          <div  data-aos="fade-up" class="tabContents" id="education">
+            <ul>
+              <li>
+                <span> March 2020 - Nov 2020</span> <br />
+                Cerficate in Software Development, Moringa School
+              </li>
+              <li>
+                <span> Sep 2012 - Dec 2016</span> <br />
+                Degree in Bsc Statistics, JKUAT
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="whatIDo">
+      <h3 data-aos="fade-up">What I do</h3>
+      <div class="serviceList">
+        <div  data-aos="fade-up">
+          <img src="./images/reactjs.png" alt="">
+          <h1>Frontend Development</h1>
+          <p>Skilled in translating web designs to code and responsive web designs using React Library and its frameworks, NextJS and Vite</p>
+        </div>
+        <div  data-aos="fade-up">
+          <img src="./images/figma.png" alt="">
+          <h1>UI/UX Design</h1>
+          Conversant with design process and actualization of web design using Figma to create amazing user intefaces and user experience.
+        </div>
+        <div  data-aos="fade-up">
+          <img src="./images/nodejs.png" alt="">
+          <h1>Backend Web Development</h1>
+          <p>Experienced in backend development using Node JS and Express framework with knowledge of NoSql database, MongoDB.</p>
         </div>
       </div>
     </section>
     <section class="skills" id="skill">
-      <h3 data-aos="fade-up">What I'm Good At?</h3>
+      <h3 data-aos="fade-up">What I'm Good At</h3>
       <div class="skill container">
         <li data-aos="fade-up">
           <h5><span>87%</span> SASS & CSS3</h5>
           <span class="bar"><span class="html" id="span"></span></span>
         </li>
         <li data-aos="fade-up">
-          <h5><span>70%</span> JavaScript</h5>
+          <h5><span>80%</span> JavaScript</h5>
           <span class="bar"><span class="javascript" id="span"></span></span>
         </li>
         <li data-aos="fade-up">
-          <h5><span>80%</span> React</h5>
+          <h5><span>80%</span> React JS</h5>
           <span class="bar"><span class="python" id="span"></span></span>
         </li>
         <li data-aos="fade-up">
-          <h5><span>55%</span> Angular</h5>
+          <h5><span>55%</span> Next JS</h5>
+          <span class="bar"><span class="node" id="span"></span></span>
+        </li>
+        <li data-aos="fade-up">
+          <h5><span>75%</span> Node JS</h5>
           <span class="bar"><span class="angular" id="span"></span></span>
         </li>
         <li data-aos="fade-up">
-          <h5><span>75%</span> Django</h5>
-          <span class="bar"><span class="flask" id="span"></span></span>
+          <h5><span>75%</span> Figma</h5>
+          <span class="bar"><span class="figma" id="span"></span></span>
         </li>
       </div>
     </section>
     <section class="projects" id="project">
       <h3 data-aos="fade-up">What I've Done</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4" data-aos="fade-up">
-            <img src="./images/img3.png" alt="">
-            <div class="overlay text-center">
-              <h6>An application for searching github users and their repositories built using Angular</h6>
-              <a class="btn btn-sm" href="https://derrickodhiambo.github.io/Github-IP2/" target="_blank" style="background:orange;">Visit Site</a>
-            </div>
+      <div class="workList">
+        <div class="work" data-aos="fade-up">
+          <img src="./images/sokosolarweb.png" alt="" />
+          <div class="overlay">
+            <h6>
+              An e-commerce platform that deals with green energy that onboards engineers, vendors and normal users with an AI quotation system.
+            </h6>
+            <a
+              class="btn btn-sm"
+              href="https://sokosolar.co.ke/"
+              target="_blank"
+              style="background: rgb(199, 131, 5)"
+              >Visit Site</a
+            >
           </div>
-          <div class="col-md-4" data-aos="fade-up">
-            <img src="./images/img2.png" alt="">
-            <div class="overlay text-center">
-              <h6>A frontend template created in React & SASS</h6>
-              <a class="btn btn-sm" href="https://netbookspa.netlify.app/" target="_blank"
-                style="background:orange;">View Site</a>
-            </div> 
+        </div>
+        <div class="work" data-aos="fade-up">
+          <img src="./images/sokosolardesign.png" alt="" />
+          <div class="overlay">
+            <h6>A figma design for the Sokosolar e-commerce platform</h6>
+            <a
+              class="btn btn-sm"
+              href="https://www.figma.com/file/Jnue08XN5W9HH5af9CkjTD/SokoSolar-App?type=design&node-id=296-517&t=uLR8OZZkqiX4eyTx-0"
+              target="_blank"
+              style="background: rgb(199, 131, 5)"
+              >View Site</a
+            >
           </div>
-          <div class="col-md-4" data-aos="fade-up">
-            <img src="./images/img1.png" alt="">
-            <div class="overlay text-center">
-              <h6>Blog website created using MERN stack. 50% complete</h6>
-              <a class="btn btn-sm" href="https://sam-blog-2022.netlify.app/" target="_blank"
-                style="background:orange;">View Site</a>
-            </div>
+        </div>
+        <div class="work" data-aos="fade-up">
+          <img src="./images/rock.png" alt="" />
+          <div class="overlay">
+            <h6>A frontend challenge to create Rock Paper Scissors game using Next JS and Framer motion.</h6>
+            <a
+              class="btn btn-sm"
+              href="https://rock-paper-scissors-iota-one.vercel.app/"
+              target="_blank"
+              style="background: rgb(199, 131, 5)"
+              >View Site</a
+            >
           </div>
-          <div class="col-md-4" data-aos="fade-up">
-            <img src="./images/img4.png" alt="">
-            <div class="overlay text-center">
-              <h6>Hood Watch application that manages activities of a neighbourhood buit using Django</h6>
-              <a class="btn btn-sm" href="https://hood26.herokuapp.com/" target="_blank" style="background:orange;">View
-                Site</a>
-            </div>
+        </div>
+      </div>
+      <div class="workList">
+        <div class="work" data-aos="fade-up">
+          <img src="./images/moringadesign.png" alt="" />
+          <div class="overlay">
+            <h6>
+              A figma design for Moringa School portal.
+            </h6>
+            <a
+              class="btn btn-sm"
+              href="https://www.figma.com/file/lPJF1a0l8N91y2TGjv1rdI/Morninga-Portal?type=design&node-id=736-36&t=eYf8WpoLVthNzUHA-0"
+              target="_blank"
+              style="background: rgb(199, 131, 5)"
+              >View Site</a
+            >
           </div>
-          <div class="col-md-4" data-aos="fade-up">
-            <img src="./images/img7.png" alt="">
-            <div class="overlay text-center">
-              <h6>Pitch application for creating short pitches built in Flask</h6>
-              <a class="btn btn-sm" href="https://pitch-away.herokuapp.com/" target="_blank" style="background:orange;">View
-                Site</a>
-            </div>
+        </div>
+        <div class="work" data-aos="fade-up">
+          <img src="./images/prompts.png" alt="" />
+          <div class="overlay">
+            <h6>An application for sharing AI prompts with Google authentication system.</h6>
+            <a
+              class="btn btn-sm"
+              href="https://prompt-ivwekuqga-derrickodhiambo.vercel.app/"
+              target="_blank"
+              style="background: rgb(199, 131, 5)"
+              >View Site</a
+            >
           </div>
-          <div class="col-md-4" data-aos="fade-up">
-            <img src="./images/img9.png" alt="">
-            <div class="overlay text-center">
-              <h6>A Quotes application for creating random quotes built using Angular</h6>
-              <a class="btn btn-sm" href="https://derrickodhiambo.github.io/Quotes-IP1/" target="_blank" style="background:orange;">View
-                Site</a>
-            </div>
+        </div>
+        <div class="work" data-aos="fade-up">
+          <img src="./images/auto.png" alt="" />
+          <div class="overlay">
+            <h6>
+              An autoshop figma design template for buying and selling automobiles.
+            </h6>
+            <a
+              class="btn btn-sm"
+              href="https://www.figma.com/file/58T1Rw2C15cjmPsSWcCGAH/AUTO-SHOP?type=design&node-id=0-1&t=a3hhiUqJdcUFYRSx-0"
+              target="_blank"
+              style="background: rgb(199, 131, 5)"
+              >View Site</a
+            >
           </div>
         </div>
       </div>
@@ -171,13 +274,31 @@
         <h3>Socials</h3>
         <p>Follow me on the following social media platforms.</p>
         <ul class="socials">
-          <li><a href="https://github.com/DerrickOdhiambo" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/profile/view" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-          <li><a href="https://www.instagram.com/odhiambo_derrick/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://mobile.twitter.com/terohderik" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li>
+            <a href="https://github.com/DerrickOdhiambo" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/profile/view" target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/odhiambo_derrick/"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://mobile.twitter.com/terohderik" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
         </ul>
         <a href="#header">
-          <span><i class="far fa-arrow-alt-circle-up"></i></span><br>
+          <span><i class="far fa-arrow-alt-circle-up"></i></span><br />
           <small>Back To Top</small>
         </a>
       </div>
@@ -186,6 +307,8 @@
       </div>
     </section>
 
+    <!-- Typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- Timeline -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
     <!-- GSAP animations -->
@@ -203,14 +326,25 @@
       });
     </script>
     <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+    ></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
+    ></script>
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
