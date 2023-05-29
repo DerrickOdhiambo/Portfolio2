@@ -1,4 +1,5 @@
 const hero = document.querySelector('.hero');
+const heroImg = document.querySelector('.hero-img');
 const slider = document.querySelector('.slider');
 const logo = document.querySelector('#logo');
 const headline = document.querySelector('.headline');
@@ -66,3 +67,31 @@ $('.footer-content a').on('click', function (e) {
     );
   }
 });
+
+// typed js
+
+const typed = new Typed('#multiText', {
+  strings: ['a Frontend Software Developer', 'and UI/UX Designer'],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true,
+});
+
+// ==========tabs=========
+var tablinks = document.getElementsByClassName('tabLinks');
+var tabContents = document.getElementsByClassName('tabContents');
+
+function openTab(tabname) {
+  for (tablink of tablinks) {
+    tablink.classList.remove('activeLink');
+  }
+
+  for (tabcontent of tabContents) {
+    tabcontent.classList.remove('activeTab');
+  }
+
+  event.currentTarget.classList.add('activeLink');
+
+  document.getElementById(tabname).classList.add('activeTab');
+}
