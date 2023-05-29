@@ -606,10 +606,6 @@ header,
   .footer-content a {
     font-size: 15px;
   }
-  .overlay {
-    left: 0%;
-    padding: 20px;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -722,6 +718,12 @@ header,
   }
   .projects {
     height: 100%;
+    width: 90%;
+  }
+  .work img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
   .col-md-4 img {
     height: 220px;
@@ -741,10 +743,6 @@ header,
     margin: 10px auto;
     line-height: 20px;
     font-size: 19px;
-  }
-  .overlay {
-    left: 0%;
-    padding: 20px;
   }
   .col-md-6 img {
     height: 300px;
