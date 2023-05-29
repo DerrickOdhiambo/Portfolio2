@@ -134,13 +134,17 @@ header,
 }
 
 .bio-col-1 {
-  flex-basis: 40%;
+  flex-basis: 35%;
 }
 
 .bio-col-1 img {
   width: 100%;
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+
+.bio-col-2 {
+  flex-basis: 60%;
 }
 
 .tabTitles {
@@ -175,7 +179,6 @@ header,
 .tabContents ul li {
   list-style: none;
   margin: 10px 0;
-  height: 5rem;
 }
 
 .tabContents ul li span {
@@ -620,6 +623,10 @@ header,
   }
   .bio {
     padding: 20px;
+    height: 100%;
+  }
+  .bio-col-2 {
+    flex-basis: 100%;
   }
   .skills {
     width: 95%;
@@ -661,11 +668,20 @@ header,
     font-size: 56px;
   }
 
+  .bio-row {
+    height: 100%;
+  }
+
   .bio-col-1 {
     flex-basis: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .bio-col-1 img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
   }
   .contact p {
     padding-top: 10px;
